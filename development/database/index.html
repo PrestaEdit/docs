@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.35" />
+    <meta name="description" content="Prestashop Technical Documentation">
+<meta name="author" content="PrestaShop">
+
+    <link rel="shortcut icon" href="/images/preston-logo@2x.png" type="image/x-icon" />
+<link rel="icon" href="/images/preston-logo@2x.png" type="image/x-icon" />
+
+    <title>Database :: Prestashop Developer Documentation</title>
+
+    
+    <link href="/css/font-awesome.min.css?1518627740" rel="stylesheet">
+    <link href="/css/hybrid.css?1518627740" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1518627740" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1518627740" rel="stylesheet">
+    <link href="/css/auto-complete.css?1518627740" rel="stylesheet">
+    <link href="/css/style.css?1518627740" rel="stylesheet">
+
+    <script src="/js/jquery-2.x.min.js?1518627740"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/development/database/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">PrestaShop DevDocs</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1518627740"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1518627740"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1518627740"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Basics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1. </b>Basics
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/introduction/" title="Introduction" class="dd-item ">
+        <a href="/basics/introduction/">
+        Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/installation/">
+          Installation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/installation/configuration/" title="Configuration" class="dd-item ">
+        <a href="/basics/installation/configuration/">
+        Configuration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/development/" title="Development" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/development/">
+          <b>2. </b>Development
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/development/database/" title="Database" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/development/database/">
+          Database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/development/database/objectmodel/" title="ObjectModel" class="dd-item ">
+        <a href="/development/database/objectmodel/">
+        ObjectModel
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/testing/" title="Testing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/testing/">
+          <b>3. </b>Testing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/documentation/" title="Documentation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/documentation/">
+          <b>4. </b>Documentation
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/modules/" title="Modules" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/modules/">
+          <b>5. </b>Modules
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/themes/" title="Themes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/themes/">
+          <b>6. </b>Themes
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+      <section id="body">
+      <div id="overlay"></div>
+      <div class="padding highlightable">
+        
+<div>
+  <div id="top-bar">
+    
+      
+      
+      
+      <div id="top-github-link">
+        <a class="github-link" title='Edit this page' href="https://github.com/PrestaShop/docs/edit/hugo/src/content/development/database/_index.md" target="blank">
+          <i class="fa fa-code-fork"></i>
+          <span id="top-github-link-text">Edit this page</span>
+        </a>
+      </div>
+      
+    
+    <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <span id="sidebar-toggle-span">
+        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+          <i class="fa fa-bars"></i>
+        </a>
+      </span>
+      <span class="links">
+        
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Welcome</a> > <a href='/development/'>Development</a> > Database
+          
+        
+          
+        
+          
+        
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+
+        
+
+        
+        
+          
+            <div id="toc">
+  <div class="wrapper">
+    <div id="toc-title">Table of Contents</div>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#accessing-the-database">Accessing the database</a>
+<ul>
+<li><a href="#the-database-structure">The database structure</a></li>
+<li><a href="#the-dbquery-class">The DBQuery class</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+    <div id="navigation">
+  
+  
+
+  
+  
+  
+    
+      
+      
+    
+    
+    
+    
+      
+    
+    
+
+    
+    
+  
+  
+    
+      
+        
+        
+      
+    
+    
+    
+    
+      
+    
+    
+
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+    
+      
+      
+    
+    
+    
+    
+      
+    
+    
+
+    
+    
+  
+  
+    
+      
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+  
+    
+      
+        
+        
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+  
+    
+      
+    
+    
+    
+    
+    
+
+    
+    
+  
+    
+    
+  
+
+  
+
+  
+  
+  <a class="nav nav-next" href="/development/database/objectmodel/" title="ObjectModel" style="margin-right: 0px;">
+    <i class="fa fa-chevron-right"></i>
+    Next article
+  </a>
+  
+</div>
+
+  </div>
+</div>
+
+          
+        
+
+        <div id="body-inner">
+          
+            
+              <h1>Database</h1>
+            
+        
+
+        
+
+
+
+
+<h2 id="accessing-the-database">Accessing the database</h2>
+
+<h3 id="the-database-structure">The database structure</h3>
+
+<p>By default, PrestaShop’s database tables start with the <code>ps_</code> prefix. This can be customized during installation</p>
+
+<p>All table names are in lowercase, and words are separated with an underscore character (“_”):</p>
+
+<ul>
+<li>ps_employee</li>
+<li>ps_manufacturer</li>
+<li>ps_product</li>
+<li>ps_product_comment</li>
+<li>ps_shop_url</li>
+</ul>
+
+<p>When a table establishes the links between two entities, the names of both entities are mentioned in the table’s name. For instance, <code>ps_category_product</code> links products to their category.</p>
+
+<p>A few details to note about tables:</p>
+
+<ul>
+<li>Tables which contain translations must end with the <code>_lang</code> suffix. For instance, <code>ps_product_lang</code> contains all the translations for the <code>ps_product</code> table.</li>
+<li>Tables which contain the records linking to a specific shop must end with the <code>_shop</code> suffix. For instance, <code>ps_category_shop</code> contains the position of each category depending on the store.</li>
+</ul>
+
+<p>There is also a couple of standard practices for data rows within a table:</p>
+
+<ul>
+<li>Use the <code>id_lang</code> field to store the language associated with a record.</li>
+<li>Use the <code>id_shop</code> field to store the store associated with a record.</li>
+</ul>
+
+<h3 id="the-dbquery-class">The DBQuery class</h3>
+
+<p>The DBQuery class is a query builder which helps you create SQL queries. For instance:</p>
+
+<pre><code class="language-php">$sql = new DbQuery();
+$sql-&gt;select('*');
+$sql-&gt;from('cms', 'c');
+$sql-&gt;innerJoin('cms_lang', 'l', 'c.id_cms = l.id_cms AND l.id_lang = '.(int)$id_lang);
+$sql-&gt;where('c.active = 1');
+$sql-&gt;orderBy('position');
+return Db::getInstance()-&gt;executeS($sql);
+</code></pre>
+
+<p>Here are some of the methods from this class:</p>
+
+<dl class="function-definition">
+    <dt>__toString()</dt>
+    <dd>Generate and get the query.</dd>
+    
+    <dt>build()</dt>
+    <dd>Generate and get the query (return a string).</dd>
+    
+    <dt>from(string $table, mixed $alias = null)</dt>
+    <dd>Set table for FROM clause.</dd>
+    
+  <dt>groupBy(string $fields)</dt> 
+  <dd>Add a GROUP BY restriction.</dd>
+  
+  <dt>having(string $restriction)</dt>  
+  <dd>Add a restriction in the HAVING clause (each restriction will be separated by an AND statement).</dd>
+  
+  <dt>innerJoin(string $table, string $alias = null, string $on = null)</dt> 
+  <dd>
+    Add a INNER JOIN clause<br>
+    E.g. <code>$this->innerJoin('product p ON ...')</code>.
+  </dd>
+  
+  <dt>join(string $join)</dt> 
+  <dd>
+    Add a JOIN clause<br>
+    E.g. <code>$this->join('RIGHT JOIN'.DB_PREFIX.'produc t p ON ...');</code>.
+  </dd>
+  
+  <dt>leftJoin(string $table, string $alias = null, string $on = null)</dt> 
+  <dd>Add a LEFT JOIN clause.</dd>
+  
+  <dt>leftOuterJoin(string $table, string $alias = null, string $on = null)</dt> 
+  <dd>Add a LEFT OUTER JOIN clause.</dd>
+  
+  <dt>limit(string $limit, mixed $offset = 0)</dt> 
+  <dd>Limit results in query.</dd>
+  
+  <dt>naturalJoin(string $table, string $alias = null)</dt> 
+  <dd>Add a NATURAL JOIN clause.</dd>
+  
+  <dt>orderBy(string $fields)</dt> 
+  <dd>Add an ORDER BY restriction.</dd>
+  
+  <dt>select(string $fields)</dt> 
+  <dd>Add fields in query selection.</dd>
+  
+  <dt>where(string $restriction)</dt> 
+  <dd>Add a restriction in WHERE clause (each restriction will be separated by an AND statement).</dd>
+</dl>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1518627740"></script>
+    <script src="/js/perfect-scrollbar.min.js?1518627740"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1518627740"></script>
+    <script src="/js/jquery.sticky.js?1518627740"></script>
+    <script src="/js/featherlight.min.js?1518627740"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1518627740"></script>
+    <script src="/js/highlight.pack.js?1518627740"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1518627740"></script>
+    <script src="/js/learn.js?1518627740"></script>
+    <script src="/js/hugo-learn.js?1518627740"></script>
+
+    <link href="/mermaid/mermaid.css?1518627740" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1518627740"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

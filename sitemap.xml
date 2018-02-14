@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/development/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/testing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/documentation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/basics/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/modules/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/themes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/basics/installation/configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/development/database/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/basics/installation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/development/database/objectmodel/</loc>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://devdocs.prestashop.com/</loc>
+  </url>
+  
+</urlset>
