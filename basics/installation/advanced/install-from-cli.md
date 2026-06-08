@@ -46,7 +46,6 @@ This command, by default, will display the various available options:
 | `prefix`        | Prefix of table names                      | ps\_                         | _string_                                                                                              |
 | `engine`        | Engine for MySQL                           | InnoDB                       | InnoDB, MyISAM                                                                                        |
 | `name`          | Name of the shop                           | PrestaShop                   | _string_                                                                                              |
-| `activity`      | Default activity of the shop               | 0                            | Id of an activity ([Complete list of activities][activities])                                         |
 | `country`       | Country of the shop                        | fr                           | 2 letters Alpha-2 code of ISO-3166 list([ISO-3166][iso-3166])                                         |
 | `firstname`     | Admin user firstname                       | John                         | _string_                                                                                              |
 | `lastname`      | Admin user lastname                        | Doe                          | _string_                                                                                              |
